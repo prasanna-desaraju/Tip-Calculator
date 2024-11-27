@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.TipCalculatorController" spacing="10" padding="20">
+    <Label text="Enter Bill Amount:"/>
+    <TextField fx:id="billAmountField" promptText="Enter bill amount" />
+
+    <Label text="Enter Tip Percentage:"/>
+    <TextField fx:id="tipPercentageField" promptText="Enter tip percentage" />
+
+    <Button text="Calculate Tip" onAction="#handleCalculateTip" />
+
+    <Label text="Total Tip:"/>
+    <Label fx:id="totalTipLabel" text="0.00" />
+
+    <Label text="Total Amount:"/>
+    <Label fx:id="totalAmountLabel" text="0.00" />
+</VBox>
